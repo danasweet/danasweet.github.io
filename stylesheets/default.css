@@ -4,10 +4,9 @@ body {
 
 
 header {
-  font-family: Dancing Script, cursive;
-  font-size: 6em;
-  text-align: center;
-
+  width: 42%;
+  margin: auto;
+  padding-bottom: 10px;
 }
 
 .navbar {
@@ -21,7 +20,7 @@ header {
 
 li {
   display: inline;
-  padding: 35px;
+  padding: 38px;
   text-align: center;
 }
 
