@@ -141,6 +141,10 @@ hr {
   font-weight: bold;
 }
 
+.small {
+  font-size: 18px;
+}
+
 .example {
   margin-left: 15%;
 }
