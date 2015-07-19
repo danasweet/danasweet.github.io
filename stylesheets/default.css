@@ -135,3 +135,11 @@ hr {
   margin-bottom: 0;
   font-weight: bold;
 }
+
+span {
+  font-weight: bold;
+}
+
+.example {
+  margin-left: 15%;
+}
