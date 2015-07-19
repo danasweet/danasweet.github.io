@@ -3,10 +3,13 @@ body {
 }
 
 
-header {
-  width: 42%;
-  margin: auto;
-  padding-bottom: 10px;
+header a {
+  font-family: Dancing Script, cursive;
+  font-size: 92px;
+  color: black;
+  text-decoration: none;
+  margin-left: 37%;
+  margin-right: 37%;
 }
 
 .navbar {
