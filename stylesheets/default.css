@@ -117,6 +117,7 @@ hr {
   width: 70%;
   margin-left: 15%;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .blogsubtitle {
@@ -136,7 +137,7 @@ hr {
   font-weight: bold;
 }
 
-span {
+.bold {
   font-weight: bold;
 }
 

@@ -22,7 +22,7 @@
   <p id="date">july 18, 2015</p>
   <br>
   <p class="body">
-    Making your website look like that beautiful wireframe you dreamed up can be a hearty challenge for a CSS newb. The fact is, you need to have an understanding of many properties before you can direct your elements like a theater producer ("places, everyone!"). One such property is the <span>CSS Box Model</span>.
+    Making your website look like that beautiful wireframe you dreamed up can be a hearty challenge for a CSS newb. The fact is, you need to have an understanding of many properties before you can direct your elements like a theater producer ("places, everyone!"). One such property is the <span class="bold">CSS Box Model</span>.
   </p>
   <p class="body">
     Imagine that every element in your HTML file is surrounded by a shield. The shield has different layers, and its purpose is to prevent other elements from coming too close (hey, that analogy almost worked).
@@ -32,13 +32,13 @@
   </p>
   <img class="example" src="../imgs/boxmodel.png" alt="Box model illustrated"/>
   <p class="body">
-    The <span>'Content'</span> box that you see in the middle of the diagram is the bulk of your element. It could be the photo in an [img] tag, the text in a [p] tag--doesn't matter. Every element is a box, and each box has three layers that surround the content: padding, border, and margin.
+    The <span class="bold">'Content'</span> box that you see in the middle of the diagram is the bulk of your element. It could be the photo in an [img] tag, the text in a [p] tag--doesn't matter. Every element is a box, and each box has three layers that surround the content: padding, border, and margin.
   </p>
   <p class="body">
-    We're probably all familiar with <span>borders</span>. Common places you might spot a border: a table data cell, a coupon in the newspaper, your best friend's instagram (not yours--borders are <span>so</span> 2013). So a border is a line of some sort (solid, dashed, dotted) that surrounds your content.
+    We're probably all familiar with <span class="bold">borders</span>. Common places you might spot a border: a table data cell, a coupon in the newspaper, your best friend's instagram (not yours--borders are <span class="bold">so</span> 2013). So a border is a line of some sort (solid, dashed, dotted) that surrounds your content.
   </p>
   <p class="body">
-    <span>Padding</span> is the space between your content and the border. It's empty space, but it inherits the properties of the element. So if the element has a background color of black, the padding will appear black as well.
+    <span class="bold">Padding</span> is the space between your content and the border. It's empty space, but it inherits the properties of the element. So if the element has a background color of black, the padding will appear black as well.
   </p>
   <img class="example" src="../imgs/padding10.png" alt="Padding 10px example"><img class="example"src="../imgs/padding50.png" alt="Padding 50px example">
   <p class="body">
@@ -52,22 +52,22 @@
     In the above example, I'm experimenting with my site's navigation bar. At first, I had too much padding between links. Then, too little. Sometimes it takes some trial-and-error to figure out the ideal settings for padding and margin. But as you can see in the third navigation bar, it pays off in the end!
   </p>
     <p class="body">
-    So padding is interior, margin must be exterior, right? Indeed, <span>margin</span> is the space between the border and the outer edge of your element. It is transparent and will appear as white space.
+    So padding is interior, margin must be exterior, right? Indeed, <span class="bold">margin</span> is the space between the border and the outer edge of your element. It is transparent and will appear as white space.
   </p>
-  <p class="body">
-    Manipulating the padding and margin of an element allows you to adjust your element's appearance and placement on the page.
-  </p>
-  <p class="body">
+   <p class="body">
     Padding, border, and margin can all be set with CSS. You can define each side (top, bottom, left, right) individually, or you can make all sides equal by defining just one value, like so:  "margin: 10px."
+  </p>
+  <p class="body">
+    Manipulating the padding and margin of an element allows you to adjust your element's appearance and placement on the page. If you want to shift an element to the right, try increasing the margin-left. If you'd like more space above an element, try adjusting the padding-top.
   </p>
   <img class="example" src="../imgs/margin-example.png" alt="Margin Example"/>
   <p class="body">
-    Chrome Dev Tools gives us a handy visual, depicting what properties are currently affecting our element. Here, I've selected my first td (table data) cell. The content (the word 'Blue') is shown in the corner in blue. The green box surrounding it shows us that we have 50px of padding on each side. We can also see the cell border of 1px on each side. And this element has no margin set, or we would see an orange box surrounding the yellow border box.
+    Chrome Dev Tools gives us a handy visual by depicting what properties are currently affecting our element. Here, I've selected my first td (table data) cell. The content (the word 'Blue') is shown in the corner in blue. The green box surrounding it shows us that we have 50px of padding on each side. We can also see the cell border of 1px on each side. And this element has no margin set, or we would see an orange box surrounding the yellow border box.
   </p>
   <img class="example" src="../imgs/CDTpadding.png" alt="Chrome Dev Tools Example" width="690" height="300"/>
   <br>
   <p class="body">
-    If you found this topic less thrilling than the latest John Grishham novel, that's understandable. But when you're building your site and you <span>finally</span> set your margin and padding correctly and your element pops into place, well that's the stuff of dreams. Good luck outfoxing that box!
+    If you found this topic less thrilling than the latest John Grishham novel, that's understandable. But when you're building your site and you <span class="bold">finally</span> set your margin and padding correctly and your element pops into place, well that's the stuff of dreams. Good luck outfoxing that box!
   </p>
   <br>
   <hr>
