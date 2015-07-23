@@ -144,6 +144,10 @@ hr {
   font-weight: bold;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .small {
   font-size: 18px;
 }
