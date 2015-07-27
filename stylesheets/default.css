@@ -22,6 +22,22 @@ header a {
   margin: auto;
 }
 
+.contact {
+  margin: auto;
+}
+
+.contact img {
+  width: 160px;
+  height: 160px;
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contact img:hover {
+  opacity: .4;
+}
+
 li {
   display: inline;
   padding: 38px;
@@ -74,13 +90,13 @@ img {
   margin: auto;
 }
 
-table {
+.blogtable {
   margin: auto;
   padding: 10px;
   border-spacing: 6px;
 }
 
-td {
+.blogtable td {
   border: 1px solid black;
   width: 380px;
   height: 138px;
@@ -89,7 +105,7 @@ td {
   background-color: #43E8D8;
 }
 
-table a {
+.blogtable a {
   display: block;
   text-decoration: none;
   padding: 40px;
@@ -117,6 +133,10 @@ hr {
 .body {
   width: 70%;
   margin-left: 15%;
+}
+
+.body a {
+  text-decoration: none;
 }
 
 .blogtitle {
