@@ -147,6 +147,10 @@ a:hover {
   margin-bottom: 0px;
 }
 
+td:hover {
+  opacity: .8;
+}
+
 td a:hover {
   color: white;
 }
