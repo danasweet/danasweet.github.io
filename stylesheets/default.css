@@ -22,6 +22,23 @@ header a {
   margin: auto;
 }
 
+img {
+  margin-left: 15%;
+  padding-bottom: 10px;
+}
+
+.float_image {
+  float: left;
+  padding-right: 20px;
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #751947;
+}
+
 .contact {
   margin: auto;
 }
@@ -66,6 +83,16 @@ li {
   font-size: 18px;
 }
 
+.body {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 0;
+}
+
+.body a {
+  text-decoration: none;
+}
+
 .links {
   margin: 0;
   padding: 0;
@@ -85,7 +112,7 @@ a:hover {
   color:  #43E8D8;
 }
 
-img {
+.center{
   display: block;
   margin: auto;
 }
@@ -130,15 +157,6 @@ hr {
   margin-bottom: 10px;
 }
 
-.body {
-  width: 70%;
-  margin-left: 15%;
-}
-
-.body a {
-  text-decoration: none;
-}
-
 .blogtitle {
   font-size: 36px;
   width: 70%;
@@ -181,8 +199,4 @@ h4 {
 
 .small {
   font-size: 18px;
-}
-
-.example {
-  margin-left: 15%;
 }
