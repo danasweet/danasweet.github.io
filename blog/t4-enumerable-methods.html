@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
+  <title>all over the .map</title>
+  <meta charset="UTF-8">
+  <link href="../stylesheets/default.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header><a href="http://danasweet.github.io/index.html">dana sweet</a></header>
+  <div>
+    <ul class="navbar">
+      <li><a href="#">projects</a></li>
+      <li><a href="http://danasweet.github.io/blog-index.html">blog</a></li>
+      <li><a href="#">who am i?</a></li>
+      <li><a href="http://danasweet.github.io/contact.html">say hello</a></li>
+    </ul>
+  </div>
+  <hr>
+  <img src="../imgs/map.jpg" alt="world map" height="300" width="500">
+  <h2 class="blogtitle">all over the .map</h2>
+  <h3 class="blogsubtitle">exploring enumerables</h3>
+  <p id="date">july 31, 2015</p>
+  <br>
+  <p class="body">
+    Ruby has so many built-in methods, it's equal parts awesome and overwhelming. Chances are, if you want to accomplish something relatively simple, there's an existing method that'll do it for you. Which is great, but they won't do you any good if you aren't familiar with them. Lately I've been diving into Ruby Docs trying to expose myself to as many methods as possible, and some of my favorites thus far are Enumberables.
+  </p>
+  <p class="body">
+    To understand Enumberables, let's check out the root word. Google defines enumerate: "to mention a number of things one by one." Whoa, that makes sense (<span class="italic">cue light bulb emoji </span>)! Enumerables are methods that perform actions on each element one at a time--similar to the <span class="code">.each</span> method that we've been using with Arrays.
+  </p>
+  <p class="body">
+    Cool. Now let's look at a specific Enumerable method and how we might use it. I haven't actually used <span class="code">.map</span> in my code yet, but it seems potentially helpful and versatile. (As a side note, <span class="code">.map</span> has an alias method, <span class="code">.collect</span>. They are essentially the same, just different name.)
+  </p>
+  <p class="body">
+    <span class="code">.map</span> is pretty straightforward. Call it on an object, along with a block (designated by the curly brackets) which tells it what to do to each element. The output is a new array containing the newly changed elements. <span class="code">.map</span> is non-destructive by default, so if you want to modify the original array, use the destructive form of the method, <span class="code">.map!</span>
+  </p>
+  <p class="body">
+    <span class="code">["barack", "george", "bill", "george", "ronald"].map { |pres| pres.capitalize }
+    <br>
+    => ["Barack", "George", "Bill", "George", "Ronald"]</span>
+  </p>
+  <p class="body">
+    <span class="code">.map</span> comes in handy any time we need to make changes to each element in an array. In the above example, we used it to capitalize each name. Notice the code block within curly brackets defines the objects, followed by what is to be done to each element.
+  </p>
+  <p class="body">
+    <span class="code">[2, 4, 6, 8].map! { |x| x**2 }
+    <br>
+    => [4, 16, 36, 64]</span>
+  </p>
+  <p class="body">
+    This returns the original array with altered contents--not a new array--since we used the destructive (!) form. We're basically saying, "For each object, 'x', return the square of x."
+  </p>
+  <p class="body">
+    Easy, right? I hope this has empowered you all to become method masters and brave those Ruby Docs for yourself!
+  </p>
+  <br>
+  <hr>
+  <ul class="social">
+    <li></li>
+  </ul>
+  <ul class="links">
+    <li><a href="https://www.facebook.com/dana.sweet"><img src="../imgs/facebookbutton.png" alt="facebook link" height="40" width="40"/></a></li>
+    <li><a href="https://instagram.com/danasweet/"><img src="../imgs/instabutton.png" alt="instagram link" height="40" width="40"/></a></li>
+    <li><a href="https://twitter.com/dana_sweet"><img src="../imgs/twitterbutton.png" alt="twitter link" height="40" width="40"/></a></li>
+    <li><a href="https://www.linkedin.com/in/sweetdana"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="40" width="40"/></a></li>
+    <li><a href="https://github.com/danasweet"><img src="../imgs/githubbutton.png" alt="github link" height="40" width="40"/></a></li>
+  </ul>
+</body>
+</html>

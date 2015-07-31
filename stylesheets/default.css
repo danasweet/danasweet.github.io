@@ -8,7 +8,7 @@ header {
 
 header a {
   font-family: Dancing Script, cursive;
-  font-size: 92px;
+  font-size: 98px;
   color: black;
   text-decoration: none;
 }
@@ -128,7 +128,7 @@ a:hover {
   width: 460px;
   height: 138px;
   text-align: center;
-  font-size: 22px;
+  font-size: 24px;
   background-color: #43E8D8;
 }
 
@@ -141,7 +141,7 @@ a:hover {
 
 .blogtag {
   text-align: center;
-  font-size: 30px;
+  font-size: 34px;
   font-family: Dancing Script, Helvetica, sans-serif;
   margin-top: 20px;
   margin-bottom: 0px;
@@ -162,7 +162,7 @@ hr {
 }
 
 .blogtitle {
-  font-size: 36px;
+  font-size: 40px;
   width: 70%;
   margin-left: 15%;
   margin-bottom: 0;
@@ -203,4 +203,9 @@ h4 {
 
 .small {
   font-size: 18px;
+}
+
+.code {
+  font-family: Consolas, Lucida Console, Courier New;
+  background-color: #EDEDF3;
 }
