@@ -55,6 +55,14 @@ a {
   opacity: .4;
 }
 
+.aboutpic {
+  text-align: center;
+}
+
+div img {
+  margin: auto;
+}
+
 li {
   display: inline;
   padding: 38px;
