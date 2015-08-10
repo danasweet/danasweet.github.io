@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
+  <title>teaching classes</title>
+  <meta charset="UTF-8">
+  <link href="../stylesheets/default.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header><a href="http://danasweet.github.io/index.html">dana sweet</a></header>
+  <div>
+    <ul class="navbar">
+      <li><a href="#">projects</a></li>
+      <li><a href="http://danasweet.github.io/blog-index.html">blog</a></li>
+      <li><a href="http://danasweet.github.io/about.html">who am i?</a></li>
+      <li><a href="http://danasweet.github.io/contact.html">say hello</a></li>
+    </ul>
+  </div>
+  <hr>
+  <h2 class="blogtitle">teaching classes</h2>
+  <h3 class="blogsubtitle">another excuse for a cat analogy</h3>
+  <p id="date">august 9, 2015</p>
+  <br>
+  <p class="body">
+    I've been reading/watching everything I can get my hands on about Ruby <span class="bold">Classes</span> this week, and to be honest, I haven't had that ah-ha moment yet. So I'm going to write a blog post about them. Because, those who can't do, teach. Right? Errr, something like that.
+  </p>
+  <p class="body">
+    So far most of our work at DBC has involved small, independent Ruby methods. Classes are useful when you begin solving more complex problems. They help you keep track of methods and variables that work together, and save you the hassle of repeatedly rewriting code that you want to reuse--in short, they keep you organized.
+  </p>
+  <p class="body">
+    In keeping with the cat lady theme my blog has (surprisingly?) taken on, lets assume that I want to use Ruby to keep track of my many cats and their charming kitty characteristics. First, I'd need to create a new class (remember to capitalize it!) and define an <span class="bold">initialize</span> method.
+  </p>
+  <img src="../imgs/class1.png" alt="new class">
+  <p class="body">
+    At first, initialize looks pretty weird. Don't fret...this initial (heh) method just sets up the class for use. Essentially what we're saying is, when a new instance of this class is created, we will pass it certain variables that can be used throughout the instance. These variables are aptly named: <span class="bold">instance variables</span>. Each instance variable will behave the same way for every instance of "Kitty", but they won't have the same value. That is, my cats all have names, but they don't all have the same name. These instance variables can be used anywhere throughout the class, as long as you preface them with an @.
+  </p>
+  <img src="../imgs/class2.png" alt="attr_reader">
+  <p class="body">
+    Ok, so I've created a new instance of our class and initialized it. I also need to include an <span class="bold">attr_reader</span> for my instance variables, so that I can access them outside the class. Just plop it in right under the class Name. If I forget to do this, I'll get an undefined method error when trying to access my instance variables. Using attr_reader is just a shortcut. I don't have to include it, but without it I'd have to create a new method within my class for each variable, like so:
+  </p>
+  <img src="../imgs/class3.png" alt="new method">
+  <p class="body">
+    I can now write something simple like <span class="code">favorite_cat.name</span> and Ruby will output <span class="code">jsweet</span>. But let's up the creepy factor and say I want to start making my virtual cats do things. Let's create some instance methods.
+  </p>
+  <img src="../imgs/class4.png" alt="class methods">
+  <p class="body">
+    Fun, right? Calling the <span class="code">play_with_laser</span> method on favorite_cat will output: <span class="code">I WILL GET YOU RED DOT!</span> Calling <span class="code">favorite_cat.give_pets</span> will win you some meows and purrs, and <span class="code">shed_on_everything</span> will evaluate to <span class="code">true</span> or <span class="code">false</span>, depending on <span class="code">fluff_factor</span> (in this case, <span class="code">true</span>).
+  </p>
+  <p class="body">
+    Hopefully I've answered a few Ruby Class questions, but I'll leave the biggest one for you to ponder...
+  </p>
+  <img src="../imgs/class5.jpg" alt="red dot meme">
+  <br>
+  <hr>
+  <ul class="social">
+    <li></li>
+  </ul>
+  <ul class="links">
+    <li><a href="https://www.facebook.com/dana.sweet"><img src="../imgs/facebookbutton.png" alt="facebook link" height="40" width="40"/></a></li>
+    <li><a href="https://instagram.com/danasweet/"><img src="../imgs/instabutton.png" alt="instagram link" height="40" width="40"/></a></li>
+    <li><a href="https://twitter.com/dana_sweet"><img src="../imgs/twitterbutton.png" alt="twitter link" height="40" width="40"/></a></li>
+    <li><a href="https://www.linkedin.com/in/sweetdana"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="40" width="40"/></a></li>
+    <li><a href="https://github.com/danasweet"><img src="../imgs/githubbutton.png" alt="github link" height="40" width="40"/></a></li>
+  </ul>
+</body>
+</html>
