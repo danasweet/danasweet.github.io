@@ -180,7 +180,7 @@ hr {
 .blogsubtitle {
   font-size: 24px;
   width: 70%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   margin-left: 15%;
   margin-top: 0;
 }
@@ -189,16 +189,25 @@ h4 {
   font-size: 24px;
   font-weight: bold;
   margin-left: 15%;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-left: 15%;
+  margin-bottom: 10px;
 }
 
 #date {
-  font-size: 18px;
+  font-size: 16px;
   width: 70%;
   margin-left: 15%;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-weight: bold;
+}
+
+.resume {
+  text-align: center;
 }
 
 .bold {
@@ -216,4 +225,5 @@ h4 {
 .code {
   font-family: Consolas, Lucida Console, Courier New;
   background-color: #EDEDF3;
+  width: 70%;
 }
