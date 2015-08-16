@@ -105,17 +105,9 @@ h3 {
 /* -----index.html----- */
 
 #homepageimg {
-  margin-left: 15%;
-  padding-bottom: 10px;
+  padding-top: 10px;
   display: block;
   margin: auto;
-}
-
-.float_image {
-  float: left;
-  padding-right: 20px;
-  padding-left: 0;
-  padding-bottom: 20px;
 }
 
 
@@ -187,7 +179,7 @@ td a:hover {
   font-size: 34px;
   font-family: Dancing Script, Helvetica, sans-serif;
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .blogtitle {
@@ -213,6 +205,13 @@ td a:hover {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: bold;
+}
+
+.float_image {
+  float: left;
+  padding-right: 20px;
+  padding-left: 0;
+  padding-bottom: 20px;
 }
 
 
