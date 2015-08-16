@@ -1,3 +1,6 @@
+
+/*   ------main------    */
+
 body {
   font-family: PT Sans Narrow, Helvetica, sans-serif;
 }
@@ -22,9 +25,88 @@ header a {
   margin: auto;
 }
 
+.navbar li {
+  display: inline;
+  padding: 38px;
+  text-align: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  text-align: center;
+  font-family: PT Sans Narrow, Helvetica, sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #751947;
+}
+
+a:hover {
+  color:  #43E8D8;
+}
+
+.social {
+  list-style-type: none;
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.links li {
+  display: inline-block;
+  padding: 20px;
+}
+
 img {
   margin-left: 15%;
   padding-bottom: 10px;
+}
+
+hr {
+  width: 75%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 15%;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-left: 15%;
+  margin-bottom: 10px;
+}
+
+.body {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 0;
+}
+
+.body a {
+  text-decoration: none;
+}
+
+
+/* -----index.html----- */
+
+#homepageimg {
+  margin-left: 15%;
+  padding-bottom: 10px;
+  display: block;
+  margin: auto;
 }
 
 .float_image {
@@ -34,10 +116,8 @@ img {
   padding-bottom: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: #751947;
-}
+
+/* -----contact page----- */
 
 .contact {
   margin: auto;
@@ -55,75 +135,20 @@ a {
   opacity: .4;
 }
 
+
+/* -----about----- */
+
 .aboutpic {
   text-align: center;
-}
-
-div img {
   margin: auto;
 }
 
-li {
-  display: inline;
-  padding: 38px;
-  text-align: center;
+.aboutpic img {
+  margin-left: 0;
 }
 
-.social {
-  list-style-type: none;
-  background-color: black;
-  text-align: center;
-}
 
-.social a {
-  text-decoration: none;
-  text-align: center;
-  font-family: PT Sans Narrow, Helvetica, sans-serif;
-  color: black;
-  font-size: 18px;
-}
-
-.navbar a {
-  text-decoration: none;
-  text-align: center;
-  font-family: PT Sans Narrow, Helvetica, sans-serif;
-  color: white;
-  font-size: 18px;
-}
-
-.body {
-  width: 70%;
-  margin-left: 15%;
-  margin-top: 0;
-}
-
-.body a {
-  text-decoration: none;
-}
-
-.links {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.links li {
-  display: inline-block;
-  padding: 20px;
-}
-
-.easteregg {
-  text-decoration: none;
-}
-
-a:hover {
-  color:  #43E8D8;
-}
-
-.center{
-  display: block;
-  margin: auto;
-}
+/* ----- blog -----*/
 
 .blogtable {
   margin: auto;
@@ -147,14 +172,6 @@ a:hover {
   color: black;
 }
 
-.blogtag {
-  text-align: center;
-  font-size: 34px;
-  font-family: Dancing Script, Helvetica, sans-serif;
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-
 td:hover {
   opacity: .8;
 }
@@ -163,10 +180,12 @@ td a:hover {
   color: white;
 }
 
-hr {
-  width: 75%;
-  margin-top: 15px;
-  margin-bottom: 10px;
+.blogtag {
+  text-align: center;
+  font-size: 34px;
+  font-family: Dancing Script, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .blogtitle {
@@ -185,18 +204,6 @@ hr {
   margin-top: 0;
 }
 
-h4 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-left: 15%;
-  margin-bottom: 10px;
-}
-
-h3 {
-  margin-left: 15%;
-  margin-bottom: 10px;
-}
-
 #date {
   font-size: 16px;
   width: 70%;
@@ -206,9 +213,20 @@ h3 {
   font-weight: bold;
 }
 
-.resume {
+
+/* -----resume----- */
+.resumeheading {
   text-align: center;
+  color: #43E8D8;
 }
+
+.resume ul {
+  width: 70%;
+  margin-left: 15%;
+}
+
+
+/* -----text formatting-----*/
 
 .bold {
   font-weight: bold;
@@ -226,4 +244,8 @@ h3 {
   font-family: Consolas, Lucida Console, Courier New;
   background-color: #EDEDF3;
   width: 70%;
+}
+
+.easteregg {
+  text-decoration: none;
 }
