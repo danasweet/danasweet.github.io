@@ -102,6 +102,32 @@ h3 {
 }
 
 
+
+/* -----text formatting-----*/
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.small {
+  font-size: 18px;
+}
+
+.code {
+  font-family: Consolas, Lucida Console, Courier New;
+  background-color: #EDEDF3;
+  width: 70%;
+}
+
+.easteregg {
+  text-decoration: none;
+}
+
+
 /* -----index.html----- */
 
 #homepageimg {
@@ -225,29 +251,4 @@ td a:hover {
 .resume ul {
   width: 70%;
   margin-left: 15%;
-}
-
-
-/* -----text formatting-----*/
-
-.bold {
-  font-weight: bold;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.small {
-  font-size: 18px;
-}
-
-.code {
-  font-family: Consolas, Lucida Console, Courier New;
-  background-color: #EDEDF3;
-  width: 70%;
-}
-
-.easteregg {
-  text-decoration: none;
 }
