@@ -203,6 +203,7 @@ td a:hover {
 .blogtag {
   text-align: center;
   font-size: 34px;
+/*  font-family: PT Sans Narrow, Helvetica, sans-serif;*/
   font-family: Dancing Script, Helvetica, sans-serif;
   margin-top: 20px;
   margin-bottom: 0;
@@ -252,3 +253,37 @@ td a:hover {
   width: 70%;
   margin-left: 15%;
 }
+
+/*-----projects----- */
+.projecttable {
+  margin: auto;
+  padding: 10px;
+  border-collapse: separate;
+  border-spacing: 120px 0px;
+}
+
+.projecttable td {
+  border: 1px solid black;
+  width: 280px;
+  height: 200px;
+  text-align: center;
+  background-image: url(../imgs/backgroundimage2.jpg);
+  opacity: .8;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.projecttable a {
+  color: black;
+/*  display: block;
+  height: 100%;
+  width: 100%;*/
+  padding: 90px 95px;
+}
+
+.projecttable td:hover {
+  opacity: .6;
+  color: white;
+}
+
