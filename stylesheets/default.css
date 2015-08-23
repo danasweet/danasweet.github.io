@@ -114,6 +114,12 @@ h3 {
   text-decoration: none;
 }
 
+.codeblock {
+  background-color: #EDEDF3;
+  width: 50%;
+  margin-left: 15%;
+  font-family: Consolas, Lucida Console, Courier New;
+}
 
 
 /* -----text formatting-----*/
