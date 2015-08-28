@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <title>Ruby Basics Cheat Sheet</title>
+         <meta charset="UTF-8">
+         <link href="../stylesheets/cheat-sheet.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Ruby Basics Cheat Sheet</h1>
+            <h4>A Simple Guide to Integers, Strings, Arrays and Hashes</h4>
+        </header>
+        <!-- Integers -->
+        <div id="integer">
+            <h2>1ntegers</h2>
+            <section class="column1">
+                <h4>What They Are and How to Create Them</h4>
+                <p>Integers are numbers.</p>
+                <p><code>1  2  3  4  5  6  7  8  9  10</code></p>
+                <p>To create them, simply type the number with no additional formatting. </p>
+                <p>You can also convert another object to an integer using the <code>.to_i</code> method:</p>
+                <p><code>"2".to_i => 2</code></p>
+                <p><code>"2".to_i + 3 => 5</code></p>
+            </section>
+             <section class="column2">
+                <h4>How They Interact With Other Objects</h4>
+                 <p><code>8.integer? => true</code></p>
+                 <p><code>2 + 17 => 19<br>16 / 4 => 4<br>3 * 9 => 27</code></p>
+                 <p><code>[1, 2, 3, 4, 5, 6, 7, 8]</code></p>
+                 <p><code>{"beans" => 3, "tomatoes" => 1, "noodles" => 30, "zuccini" => 3}</code></p>
+                 <p><code>8.even? => true</code></p>
+                 <p><code>8.to_s => "8"</code></p>
+                 <p><code>5.times do <br> puts "Hi there!"<br> end</code></p>
+            </section>
+        </div>
+         <!-- Strings -->
+        <div id="strings">
+            <h2>"Strings"</h2>
+            <section class="column1">
+                <h4>What They Are and How to Create Them</h4>
+                <p>Any characters between quotation marks are strings.</p>
+                <p><code>"I am a string"</code></p>
+                <p><code>"100"</code></p>
+                <p>To create a string, simply type characters within quotation marks, or define an empty string using empty quotation marks.</p>
+                <p><code>string = ""</code></p>
+                <p>You can also convert another object to a string using the <code>.to_s</code> method:</p>
+                <p><code>2.to_s => "2"</code></p>
+                <p><code>2.to_s * 3 => "222"</code></p>
+            </section>
+             <section class="column2">
+                <h4>How They Interact With Other Objects</h4>
+                 <p><code>"string".class => String</code></p>
+                 <p><code>"Mary" + " had" + " a" + " little" + " lamb" => "Mary had a little lamb"</code></p>
+                 <p><code>"Excellent".length => 9</code></p>
+                 <p><code>"The cat jumped 5 times".length => 22 </code></p>
+                 <p><code>"elephant".reverse => "tnahpele"</code></p>
+                 <p><code>"It's been a great day".split => ["It's", "been", "a", "great", "day"]</code></p>
+                 <p><code>"barack".capitalize => "Barack"</code></p>
+                 <p><code>{"Mary" => "teacher", "Bob" => "nurse", "James" => "carpenter", "Joshua" => "broker"}</code></p>
+            </section>
+        </div>
+        <!--Arrays-->
+        <div id="arrays">
+            <h2>[Arrays]</h2>
+            <section class="column1">
+                <h4>What They Are and How to Create Them</h4>
+     <p>Arrays are ordered collections of any objects, with integers as indexes for accessing elements. </p>
+                <p><code>["boy", 7, "girl", 10, "banana"]</code></p>
+                <p><code>[6, 8, 4, 6, 3]</code></p>
+                <p>To create an array, type your elements within brackets <code> [ ] </code> and use commas to separate them, or just use empty brackets.</p>
+                <p><code>array = []</code></p>
+                <p><code>array = [1, 2, 3]</code></p>
+                <p>You can also use the method <code>.split</code> to separate strings into an array.</p>
+                <p><code>"string".split("") => ["s", "t", "r", "i", "n", "g"]</code></p>
+                <p><code>222.to_s.split("") => ["2", "2", "2"]</code></p>
+            </section>
+             <section class="column2">
+                <h4>How They Interact With Other Objects</h4>
+                 <p><code>[3, 4, 5].class => Array</code></p>
+                 <p><code>["cat", "dog", "bird", "cow"]</code></p>
+                 <p><code>[1, 4, 26, 8, 45]</code></p>
+                 <p><code>["cat", 26, "bird", "cow", 45]</code></p>
+                 <p><code>[1, 2, 3] + [3, 4, 5] => [1, 2, 3, 3, 4, 5]</code></p>
+                 <p><code>[1, 2, 3, 4].push(5) => [1, 2, 3, 4, 5]</code></p>
+                 <p><code>["a", "b", "c", "d"].pop => "d"</code></p>
+                 <p><code>["tree", "bush", "flower"].clear => []</code></p>
+                 <p><code>[1, 2, 3, 4].each do |n| <br> print n + 2<br> end <br> => 3456</code></p>
+            </section>
+        </div>
+        <!--Hashes-->
+        <div id="hashes">
+            <h2>{Hashes}</h2>
+            <section class="column1">
+                <h4>What They Are and How to Create Them</h4>
+                 <p>Hashes are like dictionaries. They are collections of unique keys and their values.</p>
+                <p><code>{"rainbow" => 1, "gold" => 3, "leprechaun" => 1</code></p>
+                <p>To create a hash, put your content into curly brackets { }. Hashes can be formatted in two different ways: using arrows <code> => </code> and using colons <code> : </code>. In both formats, the elements are separated by commas.</p>
+                <p><code>{"hash" => 3, "array" => 2}</code></p>
+                <p><code>{:hash 3, :array 2}</code></p>
+                <p>To access elements of a hash, or to add new elements to a hash, use square brackets:</p>
+                <p><code>hash = ["banana" => 4]<br>hash["banana"] => 4<br>hash["apple"] = 3 => {"banana" => 4, "apple" => 3}</code></p>
+            </section>
+             <section class="column2">
+                <h4>How They Interact With Other Objects</h4>
+                 <p><code>{"a" => 1, "b" => 2, "c" => 3}</code></p>
+                 <p><code>{"100" => 1, "200" => 2, "300" => 3}</code></p>
+                 <p><code>{:house 4, :yard 5, :sidewalk 6}</code></p>
+                 <p><code>{"a" => 1, "b" => 2, "c" => 3}.keys => ["a", "b", "c"]</code></p>
+                 <p><code>{"a" => 1, "b" => 2, "c" => 3}.values => [1, 2, 3]</code></p>
+                 <p><code>hash1 = {"a" => 1, "b" => 2, "c" => 3} <br> hash2 = {"d" => 4, "e" => 5, "f" => 6}<br>hash1.merge(hash2) => {"a" => 1, "b" => 2, "c" => 3, "d" => 4, "e" => 5, "f" => 6}</code></p>
+            </section>
+        </div>
+    </body>
+</html>
+
