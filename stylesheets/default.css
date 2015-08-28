@@ -290,15 +290,12 @@ td a:hover {
   opacity: .8;
   font-size: 24px;
   font-weight: bold;
-
 }
 
 .projecttable a {
   color: black;
-/*  display: block;
-  height: 100%;
-  width: 100%;*/
-  padding: 90px 95px;
+  display: block;
+  width: 100%;
 }
 
 .projecttable td:hover {
