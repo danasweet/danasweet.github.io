@@ -260,6 +260,11 @@ td a:hover {
   padding-bottom: 20px;
 }
 
+#regex {
+  margin-left: 15%;
+
+}
+
 
 /* -----resume----- */
 .resumeheading {
