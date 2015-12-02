@@ -219,15 +219,6 @@ td a:hover {
   color: white;
 }
 
-.blogtag {
-  text-align: center;
-  font-size: 34px;
-/*  font-family: PT Sans Narrow, Helvetica, sans-serif;*/
-  font-family: Dancing Script, Helvetica, sans-serif;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-
 .blogtitle {
   font-size: 40px;
   width: 70%;
@@ -268,7 +259,7 @@ td a:hover {
 
 /* -----resume----- */
 #download {
-  width: 800px;
+  width: 900px;
   margin: auto;
 }
 
@@ -280,9 +271,13 @@ td a:hover {
   padding-bottom: 10px;
 }
 
-#resumepdf {
-  width: 800px;
+#resume-image {
+  width: 900px;
   margin: auto;
+}
+
+#resume-image img {
+  margin: 0;
 }
 
 #resumebutton {
@@ -298,7 +293,7 @@ td a:hover {
 }
 
 .resumeheading {
-  text-align: center;
+  margin-left: 15%;
   color: #43E8D8;
   margin-bottom: 10px;
 }
@@ -306,6 +301,15 @@ td a:hover {
 .resume ul {
   width: 70%;
   margin-left: 15%;
+}
+
+.skills {
+  margin: 0;
+}
+
+.emphasize {
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 /*-----projects----- */
