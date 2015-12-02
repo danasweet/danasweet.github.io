@@ -13,12 +13,9 @@ $( document ).ready(function() {
             type: "POST",
             url: "php/process.php",
             data: "name=" + name + "&email=" + email + "&message=" + message,
-            success : function(text){
-                if (text == "success"){
+            success : function(response){
+                if (response == "success"){
                     formSuccess();
-                }
-                else {
-                    console.log("that didn't work!");
                 }
             }
         });
