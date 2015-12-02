@@ -1,11 +1,9 @@
 $("#contactForm").submit(function(event){
-    // cancels the form submission
     event.preventDefault();
     submitForm();
 });
 
 function submitForm(){
-    // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
@@ -17,6 +15,8 @@ function submitForm(){
         success : function(text){
             if (text == "success"){
                 formSuccess();
+            else
+                console.log("that didn't work!")
             }
         }
     });

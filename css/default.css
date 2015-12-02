@@ -46,6 +46,7 @@ a {
 
 a:hover {
   color:  #43E8D8;
+  text-decoration: none;
 }
 
 .social {
