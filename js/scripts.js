@@ -15,8 +15,9 @@ function submitForm(){
         success : function(text){
             if (text == "success"){
                 formSuccess();
-            else
-                console.log("that didn't work!")
+            }
+            else {
+                console.log("that didn't work!");
             }
         }
     });
