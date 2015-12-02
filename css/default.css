@@ -122,6 +122,15 @@ h3 {
   font-family: Consolas, Lucida Console, Courier New;
 }
 
+.btn-success {
+  background-color: #1ce3d0;
+  border-color: #1ce3d0;
+}
+
+.btn-success:hover {
+  background-color: #139f92;
+  border-color: #139f92;
+}
 
 /* -----text formatting-----*/
 

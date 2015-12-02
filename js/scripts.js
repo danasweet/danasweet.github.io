@@ -11,7 +11,7 @@ $( document ).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: "php/process.php",
+            url: "../php/process.php",
             data: "name=" + name + "&email=" + email + "&message=" + message,
             success : function(response){
                 if (response == "success"){
@@ -23,5 +23,6 @@ $( document ).ready(function() {
 
     function formSuccess(){
         $( "#msgSubmit" ).removeClass( "hidden" );
+        $("#contactForm").trigger("reset");
     }
 });
