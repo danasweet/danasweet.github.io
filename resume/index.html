@@ -19,101 +19,127 @@
   <body>
     <header><a href="http://danawritescode.com">dana sweet</a></header>
     <div>
-      <ul class="navbar">
-        <li><a href="http://danawritescode.com/projects">projects</a></li>
-        <li><a href="#">résumé</a></li>
-        <li><a href="http://danawritescode.com/blog">blog</a></li>
-        <li><a href="http://danawritescode.com/about">about</a></li>
-        <li><a href="http://danawritescode.com/contact">say hello</a></li>
+      <ul id="navbar">
+        <li><a class="tab" href="http://danawritescode.com/projects">projects</a></li>
+        <li><a class="tab active" href="#">résumé</a></li>
+        <li><a class="tab" href="http://danawritescode.com/blog">blog</a></li>
+        <li><a class="tab" href="http://danawritescode.com/about">about</a></li>
+        <li><a class="tab" href="http://danawritescode.com/contact">contact</a></li>
       </ul>
     </div>
     <hr>
     <div id="download">
-      <i class="fa fa-download fa-2x"></i>
-      <button id="resumebutton">
-          <a href="../imgs/dana_sweet_resume.pdf" download="../imgs/dana_sweet_resume.pdf">  Download My Resume</a>
+      <button type="button" class="btn btn-lg glyphicon glyphicon-download">
+          <a href="../imgs/dana_sweet_resume.pdf" download="dana_sweet_resume.pdf">Download My Resume</a>
       </button>
     </div>
-    <br>
-<!--     <div id="resume-image">
-
-    </div> -->
     <section class="resume">
       <h2 class="resumeheading">summary</h2>
-      <p class="body">
+      <p class="block-text">
         Through simultaneous exploration of the world and of myself, I recently figured out that coding is my calling. I've discovered a passion for creating something from nothing, and learning programming basics at Dev Bootcamp has empowered me to do something I love every day. My goal is to find an opportunity that encourages me to continue growing--as a person and as a programmer.
       </p>
+      <h2 class="resumeheading">projects</h2>
+      <p class="block-text">
+        See <a href="http://danawritescode.com/projects">what I've been working on</a>.
+      </p>
       <h2 class="resumeheading">experience</h2>
-      <p class="body">
-        <span class="emphasize">UPSTREAM COMMERCE, Market Development</span> ||  Austin, TX  ||  November 2013-May 2014
-        <p class="body">
+      <p class="block-text">
+        <span class="emphasize"><span class="glyphicon glyphicon-map-marker"></span> DEV BOOTCAMP, Recent Graduate</span>  ||  Chicago, IL  ||  July 2015-November 2015
+          <p class="block-text">
+            Learned to code by immersing myself in it for 19 weeks. Focused heavily on Ruby and JavaScript, but also got exposure to several common frameworks, libraries, and tools, such as Rails, JQuery, and Git. Additional emphasis was placed on learning industry best practices, like writing DRY code, agile development, object-oriented design, and communicating effectively within a team.
+          </p>
+      </p>
+      <p class="block-text">
+        <span class="emphasize"><span class="glyphicon glyphicon-map-marker"></span> EXPLORING</span>  ||  Earth  ||  August 2014-June 2015
+          <p class="block-text">
+            Took a break from real life to figure out what I wanted out of life. Check out my very-infrequently-updated <a href="http://www.danasweet.com/" target="_blank">travel blog</a>!
+          </p>
+      </p>
+      <p class="block-text">
+        <span class="emphasize"><span class="glyphicon glyphicon-map-marker"></span> FREELANCE/CONSULTING</span>  ||  Austin, TX  ||  May 2014-August 2014
+          <p class="block-text">
+            Assisted multiple companies in setting up their initial Salesforce environments. This included identifying prospective target companies based on fit, finding relevant contacts within those organizations, and entering this data into the CRM to simplify future outreach efforts.
+          </p>
+      </p>
+      <p class="block-text">
+        <span class="emphasize"><span class="glyphicon glyphicon-map-marker"></span> UPSTREAM COMMERCE, Market Development</span> ||  Austin, TX  ||  November 2013-May 2014
+        <p class="block-text">
           Generated and qualified sales leads in the Fortune 500 retail space, specifically targetting C-level and VP-level contacts. Also vetted all inbound leads, represented the company at trade shows and events, and built up CRM data (contacts, prospective companies, etc).
         </p>
       </p>
-      <p class="body">
-        <span class="emphasize">BAZAARVOICE, Market Development Manager</span>  ||  Austin, TX  ||  April 2012-October 2013
-        <p class="body">
+      <p class="block-text">
+        <span class="emphasize"><span class="glyphicon glyphicon-map-marker"></span> BAZAARVOICE, Market Development Manager</span>  ||  Austin, TX  ||  April 2012-October 2013
+        <p class="block-text">
           Identified, established, and maintained relationships with retail prospects while generating and qualifying sales opportunities within a given territory. Employed multiple creative tactics (phone, email, direct mail, LinkedIn, Twitter, photos of puppies) to capture a prospect’s attention and secure a meeting.
         </p>
       </p>
-      <p class="body">
-        <span class="emphasize">DELL, Large Enterprise Account Manager--Software & Peripherals</span>  ||  Austin, TX  ||  February 2009-December 2011
-        <p class="body">
-          Worked directly with decision-makers at many Fortune 500 companies, including Waste Management, Foot Locker, and LG Electronics to solve their software licensing needs. Carried a $10.7M quota, and attained an average of 120%.
+      <p class="block-text">
+        <span class="emphasize"><span class="glyphicon glyphicon-map-marker"></span> DELL, Large Enterprise Account Manager--Software & Peripherals</span>  ||  Austin, TX  ||  June 2009-December 2011
+        <p class="block-text">
+          Worked directly with decision-makers at some of Dell's biggest clients to solve their software licensing needs. Carried a $10M quota, and attained an average of 120%.
         </p>
       </p>
-      <h2 class="resumeheading">technical skills</h2>
-      <p class="body">
-        <ul>
-          <h3 class="skills">languages</h3>
-            <li>Ruby</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
-            <li>HTML5</li>
-            <li>CSS</li>
-          <h3 class="skills">frameworks & libraries</h3>
-            <li>Rails</li>
-            <li>Sinatra</li>
-            <li>jQuery</li>
-          <h3 class="skills">version control</h3>
-            <li>Git</li>
-          <h3 class="skills">other tools</h3>
-            <li>Heroku</li>
-            <li>Photoshop</li>
-            <li>RSpec</li>
-            <li>MVC</li>
-            <li>TDD</li>
-            <li>Agile Development</li>
-            <li>Object-Oriented Design</li>
-        </ul>
-      </p>
-      <h2 class="resumeheading">education</h2>
-      <p class="body">
-        <span class="emphasize">DEV BOOTCAMP</span>  ||  Chicago, IL  ||  2015
-        <p class="body">
-          19-week intensive training program for aspiring web developers
-        </p>
-      </p>
-      <div class="body">
-        <span class="emphasize">MISSOURI STATE UNIVERSITY</span>  ||  Springfield, MO  ||  2008
-        <ul>
-          <li>Bachelor of Science, Marketing | Advertising & Promotion</li>
-          <li>magna cum laude, with Honors  ||  GPA 3.86</li>
-          <li>Beta Gamma Sigma, Honors Society</li>
-          <li>National Society of Collegiate Scholars</li>
-        </ul>
-      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div id="skills-section">
+            <h2 class="resumeheading">technical skills</h2>
+            <p class="block-text">
+              <ul id="tech-skills">
+                <h3 class="skills"><span class="glyphicon glyphicon-asterisk"></span> languages</h3>
+                  <li>Ruby</li>
+                  <li>JavaScript</li>
+                  <li>SQL</li>
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                <h3 class="skills"><span class="glyphicon glyphicon-asterisk"></span> frameworks & libraries</h3>
+                  <li>Rails</li>
+                  <li>Sinatra</li>
+                  <li>jQuery</li>
+                <h3 class="skills"><span class="glyphicon glyphicon-asterisk"></span> version control</h3>
+                  <li>Git</li>
+                <h3 class="skills"><span class="glyphicon glyphicon-asterisk"></span> other tools</h3>
+                  <li>Heroku</li>
+                  <li>Photoshop</li>
+                  <li>RSpec</li>
+                  <li>MVC</li>
+                  <li>TDD</li>
+                  <li>Agile Development</li>
+                  <li>Object-Oriented Design</li>
+              </ul>
+            </p>
+          </div> <!-- skills section -->
+          <div id="ed-section">
+            <h2 class="resumeheading">education</h2>
+            <p class="block-text">
+              <span class="emphasize"><span class="glyphicon glyphicon-education"></span> DEV BOOTCAMP</span>  ||  Chicago, IL  ||  2015
+              <p class="block-text">
+                19-week intensive training program for aspiring web developers
+              </p>
+            </p>
+            <div>
+              <p class="block-text">
+                <span class="emphasize"><span class="glyphicon glyphicon-education"></span> MISSOURI STATE UNIVERSITY</span>  ||  Springfield, MO  ||  2008
+              </p>
+              <ul id="college-stats">
+                <li>Bachelor of Science, Marketing | Advertising & Promotion</li>
+                <li>magna cum laude, with Honors  ||  GPA 3.86</li>
+                <li>Beta Gamma Sigma, Honors Society</li>
+                <li>National Society of Collegiate Scholars</li>
+              </ul>
+            </div>
+        </div><!--  end ed-section -->
+        </div> <!-- end row -->
+      </div> <!-- end container -->
     </section>
     <hr>
-    <ul class="social">
+    <ul class="footer">
       <li></li>
     </ul>
     <ul class="links">
-      <li><a href="https://www.facebook.com/dana.sweet" target="_blank"><img src="../imgs/facebookbutton.png" alt="facebook link" height="40" width="40"/></a></li>
-      <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="40" width="40"/></a></li>
-      <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="40" width="40"/></a></li>
-      <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="40" width="40"/></a></li>
-      <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="40" width="40"/></a></li>
+      <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="50" width="40"/></a></li>
+      <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="50" width="40"/></a></li>
+      <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="50" width="40"/></a></li>
+      <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="50" width="40"/></a></li>
     </ul>
   </body>
 </html>

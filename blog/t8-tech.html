@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>blog | dana sweet</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!--Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
@@ -19,12 +19,12 @@
 <body>
   <header><a href="http://danawritescode.com">dana sweet</a></header>
   <div>
-    <ul class="navbar">
-      <li><a href="http://danawritescode.com/projects">projects</a></li>
-      <li><a href="http://danawritescode.com/resume">résumé</a></li>
-      <li><a href="http://danawritescode.com/blog">blog</a></li>
-      <li><a href="http://danawritescode.com/about">about</a></li>
-      <li><a href="http://danawritescode.com/contact">say hello</a></li>
+    <ul id="navbar">
+      <li><a class="tab" href="http://danawritescode.com/projects">projects</a></li>
+      <li><a class="tab" href="http://danawritescode.com/resume">résumé</a></li>
+      <li><a class="tab" href="http://danawritescode.com/blog">blog</a></li>
+      <li><a class="tab" href="http://danawritescode.com/about">about</a></li>
+      <li><a class="tab" href="http://danawritescode.com/contact">contact</a></li>
     </ul>
   </div>
   <hr>
@@ -33,44 +33,44 @@
   <h3 class="blogsubtitle">deciphering regex gibberish</h3>
   <p id="date">august 29, 2015</p>
   <br>
-  <p class="body">
+  <p class="block-text">
     Thus far in my meager programming career, this is how regular expressions have appeared to me:<br>
     <code>/\%p.(d?\)~*//.w\%b</code><br>
     ...baaasically gibberish. I know understanding them will be important though, so that's why I've chosen to make regexes the topic of my tech blog this week. Please don't be surprised if information here is lacking or blatantly incorrect.
   </p>
   <h4>what are they?</h4>
-  <p class="body">
+  <p class="block-text">
     In the most basic sense, regexes search for patterns in text. Imagine a really powerful find-and-replace tool. Something cool that I just learned: once you master the regex syntax, it's generally the same across programming languages. Actually, you can even use them outside of programming in many text-editors. So they're a nifty tool to have at your disposal.
   </p>
-  <p class="body">
+  <p class="block-text">
     More good news: regular expressions look more complicated than they are. The reason that regexes sometimes look like gibberish is they employ several special characters that take on new meanings within an expression. Basic code characters like: <code> $ . | * + ? /</code> don't behave the same in the context of a regular expression. In order to use one of these characters without its special regex meaning (say, if we wanted to search for a literal question mark, rather than apply the question mark's meaning to our expression), we have to use a backslash (<code>\</code>) to escape the character. Mix all those special characters with a bunch of backslashes, and regexes can understandably look scary.
   </p>
   <h4>tell me more about this new syntax</h4>
-  <p class="body">
+  <p class="block-text">
     Right. Before we can really jump into examples, we need to lay down some basics. Here's a handy syntax chart. (This is not an exhaustive list, but I've linked the image to the full cheat sheet for future reference.)
   </p>
   <a href="http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/">
     <img src=../imgs/regex-cheat-sheet.png alt="Regex Cheat Sheet">
   </a>
   <h4>what can they do?</h4>
-  <p class="body">
+  <p class="block-text">
     Keep in mind that we are searching for patterns. So when we write a regular expression, we're essentially defining the search parameters and telling the system what matches we want returned. Here's a super basic example:
   </p>
-  <p class="body">
+  <p class="block-text">
     We can search the string "12 cats, 8 dogs, 14 elephants" for the letter "d" by simply writing:<br>
     <code>/d/</code>  ==> "12 cats, 8 <span class="bold" style="color: red">d</span>ogs, 14 elephants"<br>
     Adding a backslash to escape that "d" changes the entire meaning of the regex:<br>
     <code>/\d/</code>  ==> "<span class="bold" style="color: red">12</span> cats, <span class="bold" style="color: red">8</span> dogs, <span class="bold" style="color: red">14</span> elephants"<br>
     Now, instead of searching for the letter "d", we're searching for numerical digits, because the letter d has a special meaning within the confines of a regular expression.
   </p>
-  <p class="body">
+  <p class="block-text">
     That was a <span class="italic">very</span> simplified example, but as you can imagine, this gets really complicated, really fast. Of course you can stack different types of regex symbols (anchors, character classes, quantifiers, etc) together to create super complex and specific searches (that don't look all that different from my gibberish example!) and pair them with substitution methods to replace those patterns with new material. Regexes are also a powerful tool for developers to check the validity of user inputs. For example: have you ever wondered about the inner workings of the dreaded password complexity tests?
   </p>
-  <p class="body">
+  <p class="block-text">
     Take a look at <a href="http://stackoverflow.com/questions/5142103/regex-for-password-strength" style="color: blue">this regex</a> that checks a password string based on its strength criteria like uppercase, special case, and length:<br>
     <code>^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$</code>
   </p>
-  <p class="body">
+  <p class="block-text">
     Here it is broken down:
       <table id="regex">
         <tr>
@@ -104,20 +104,19 @@
       </table>
   </p>
   <br>
-  <p class="body">
+  <p class="block-text">
     Regular expressions definitely need to be practiced and experimented with (sort of like learning a new language). We've barely even scratched the surface of this powerful tool, but I'm looking forward to finding excuses to play around with them more.
   </p>
   <br>
   <hr>
-  <ul class="social">
+  <ul class="footer">
     <li></li>
   </ul>
   <ul class="links">
-    <li><a href="https://www.facebook.com/dana.sweet" target="_blank"><img src="../imgs/facebookbutton.png" alt="facebook link" height="40" width="40"/></a></li>
-    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="40" width="40"/></a></li>
-    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="40" width="40"/></a></li>
-    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="40" width="40"/></a></li>
-    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="40" width="40"/></a></li>
+    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="50" width="40"/></a></li>
+    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="50" width="40"/></a></li>
+    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="50" width="40"/></a></li>
+    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="50" width="40"/></a></li>
   </ul>
 </body>
 </html>

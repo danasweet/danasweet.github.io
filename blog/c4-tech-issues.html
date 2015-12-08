@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>blog | dana sweet</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!--Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
@@ -19,12 +19,12 @@
 <body>
   <header><a href="http://danawritescode.com">dana sweet</a></header>
   <div>
-    <ul class="navbar">
-      <li><a href="http://danawritescode.com/projects">projects</a></li>
-      <li><a href="http://danawritescode.com/resume">résumé</a></li>
-      <li><a href="http://danawritescode.com/blog">blog</a></li>
-      <li><a href="http://danawritescode.com/about">about</a></li>
-      <li><a href="http://danawritescode.com/contact">say hello</a></li>
+    <ul id="navbar">
+      <li><a class="tab" href="http://danawritescode.com/projects">projects</a></li>
+      <li><a class="tab" href="http://danawritescode.com/resume">résumé</a></li>
+      <li><a class="tab" href="http://danawritescode.com/blog">blog</a></li>
+      <li><a class="tab" href="http://danawritescode.com/about">about</a></li>
+      <li><a class="tab" href="http://danawritescode.com/contact">contact</a></li>
     </ul>
   </div>
   <hr>
@@ -33,28 +33,28 @@
   <p id="date">july 30, 2015</p>
   <br>
   <img class="float_image" src="../imgs/women_in_tech.png" alt="women in tech infographic">
-  <p class="body">
+  <p class="block-text">
     It's a battle of the sexes that's been waging for decades. Women in a continual quest for equality. Equality in civil rights, in pay, and now, in representation. Women are seriously outnumbered in the technology industry, and no one's really sure how to fix it.
   </p>
-  <p class="body">
+  <p class="block-text">
     <--- The purple on the left side of this image portrays the percentage of women employed by said company, the green shows the males. A sad state of affairs, no doubt. Last year, Google released a shocking report about their employee demographics: 70% are male, and 60% of those males are white. If you look specifically at tech employees (excluding positions in HR, Marketing, etc), the outlook is even more grim. Twitter employs a laughable 10% women in its tech roles.
   </p>
-  <p class="body">
+  <p class="block-text">
     Many tech giants are making efforts to step up their diversity game. Some companies are tying diversity metrics directly to executive performance evaluations and financial incentives like yearly bonuses. Earlier this year, Intel announced it would spend $300 million on diversity initiatives. Others, like Google, offer workshops aiming to educate employees about the issue.
   </p>
-  <p class="body">
+  <p class="block-text">
     Although I appreciate the effort, the way I see it, these fixes are like putting a band-aid on a broken bone. Lots of tech companies encourage hiring more women, but they're assuming that the pool of women looking to be hired in tech is out there to begin with. Get this: women earn 57% of bachelor's degrees in the US, but only 18% of Computer Science degrees. That's a huge gap!
   </p>
-  <p class="body">
+  <p class="block-text">
     I don't mean to imply that earning a degree in a subject is the only way to enter the industry (says a hopeful DBC grad), but this stat is an alarming indicator of female interest in the tech scene. Luckily there are several organizations like Girls Who Code and Girls Learning Code whose goal is to expose young girls to the programming world and inspire them to pursue careers in the field.
   </p>
-  <p class="body">
+  <p class="block-text">
     In my opinion though, the true issue runs even deeper, and begins earlier. Society may have progressed to the point that we no longer outright forbid boys to wear pink and girls to play football, but gender bias is certainly still a thing. STEM (science, technology, engineering, mathematics) fields are still primarily viewed as subjects that boys excel at. It's a dated, largely unconscious opinion, lingering from the days when boys were considered smarter than girls.
   </p>
-  <p class="body">
+  <p class="block-text">
     The bottom line: diversity in tech is not a simple issue that can be fixed by throwing money at it. We can't have more women in tech until we vanquish the unconscious gender bias that bombards females from the time they're old enough to have preferences. If we can accomplish that, hopefully we'll start seeing more purple--in our graphs <span class="italic">and</span> in our offices. (Of course guys can still wear purple too!)
   </p>
-  <p class="body">
+  <p class="block-text">
     Don't believe me? Check my sources and see for yourself:
   </p>
   <a href="https://www.ncwit.org/resources/numbers">National Center for Women & Information Technology Infographic</a>
@@ -66,15 +66,14 @@
   <a href="http://girlswhocode.com/">Girls Who Code</a>
   <br>
   <hr>
-  <ul class="social">
+  <ul class="footer">
     <li></li>
   </ul>
   <ul class="links">
-    <li><a href="https://www.facebook.com/dana.sweet" target="_blank"><img src="../imgs/facebookbutton.png" alt="facebook link" height="40" width="40"/></a></li>
-    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="40" width="40"/></a></li>
-    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="40" width="40"/></a></li>
-    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="40" width="40"/></a></li>
-    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="40" width="40"/></a></li>
+    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="50" width="40"/></a></li>
+    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="50" width="40"/></a></li>
+    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="50" width="40"/></a></li>
+    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="50" width="40"/></a></li>
   </ul>
 </body>
 </html>

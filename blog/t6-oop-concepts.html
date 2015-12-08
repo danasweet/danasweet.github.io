@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>blog | dana sweet</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!--Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
@@ -19,12 +19,12 @@
 <body>
   <header><a href="http://danawritescode.com">dana sweet</a></header>
   <div>
-    <ul class="navbar">
-      <li><a href="http://danawritescode.com/projects">projects</a></li>
-      <li><a href="http://danawritescode.com/resume">résumé</a></li>
-      <li><a href="http://danawritescode.com/blog">blog</a></li>
-      <li><a href="http://danawritescode.com/about">about</a></li>
-      <li><a href="http://danawritescode.com/contact">say hello</a></li>
+    <ul id="navbar">
+      <li><a class="tab" href="http://danawritescode.com/projects">projects</a></li>
+      <li><a class="tab" href="http://danawritescode.com/resume">résumé</a></li>
+      <li><a class="tab" href="http://danawritescode.com/blog">blog</a></li>
+      <li><a class="tab" href="http://danawritescode.com/about">about</a></li>
+      <li><a class="tab" href="http://danawritescode.com/contact">contact</a></li>
     </ul>
   </div>
   <hr>
@@ -33,42 +33,41 @@
   <h3 class="blogsubtitle">love 'em | hate 'em | read all about 'em</h3>
   <p id="date">august 15, 2015</p>
   <br>
-  <p class="body">
+  <p class="block-text">
     You don't have to look hard to find strong internet opinions about <span class="bold">class methods</span> in Ruby. Some non-supporters suggest doing away with class method usage entirely, while others insist they have their place and are fine in moderation. Before we start making rash judgments (only yesterday I didn't even know what a class method was), let's elaborate on the subject of our debate.
   </p>
   <h3>What's a class method?</h3>
-  <p class="body">
+  <p class="block-text">
     Thus far, I've worked with and blogged about instance methods. Instance methods are what you get if you simply define a method within a class. Each instance of the class will then have access to those methods. A class method varies from instance methods in that it is directly called on a class. There are a few way to do this, but the preferred style requires referring to <span class="italic">self</span> when defining the method. Here's a side-by-side example.
   </p>
   <img src="../imgs/classmethod1.png" alt="class method example">
-  <p class="body">
+  <p class="block-text">
     You can see that defining a class method is pretty syntactically similar to defining an instance method. The only difference is the inclusion of "self". Self moves around throughout a Ruby program, but in this case it's referring to the class <span class="italic">Kitty</span>. (I'll save <span class="italic">self</span> exploration for another post, another day.)
   </p>
-  <p class="body">
+  <p class="block-text">
     Now, that <span class="italic">meow</span> method was actually a bad example...I just couldn't resist the temptation to be punny. But in reality, <span class="italic">meow</span> is not a very realistic class method. Class methods can't be called by instances of the class--only by the class itself--so why create a method called <span class="italic">meow</span> that none of our <span class="italic">Kitty</span> instances can use? And what is our <span class="italic">Kitty</span> class going to do with a <span class="italic">meow</span> method?
   </p>
   <h3>When would I use a class method?</h4>
-  <p class="body">
+  <p class="block-text">
     In my limited experience with class methods, I can see only a few practical uses for them. Those uses would include anytime you need to do something to, or with, all the existing instances of a class. Say, if you wanted to list each instance, find a specific instance, or simply count how many instances of the class exist. In The Well-Grounded Rubyist, David A. Black suggests that a <span class="italic">most_expensive</span> method could be defined for class <span class="italic">Ticket</span>. It wouldn't make sense for this to be an instance method, since we're referencing all of the <span class="italic">Ticket</span> instances and returning the priciest one.
   </p>
-  <p class="body">
+  <p class="block-text">
     Some Rubyists insist that every time you think you should use a class method, you could use an instance method instead. For multiple complicated reasons that I don't feel I could adequately describe, many feel class methods are misused and often don't follow design best practices. The general consensus though, is that they are useful in certain situations, but should be employed sparingly.
   </p>
   <h3>So, what's the verdict?</h3>
-  <p class="body">
+  <p class="block-text">
     I don't quite know enough about design in Ruby to have an opinion, so I'm going to defer to the all-knowing collective internets on this one and suggest using class methods only when you've determined that you need them.
   </p>
   <br>
   <hr>
-  <ul class="social">
+  <ul class="footer">
     <li></li>
   </ul>
   <ul class="links">
-    <li><a href="https://www.facebook.com/dana.sweet" target="_blank"><img src="../imgs/facebookbutton.png" alt="facebook link" height="40" width="40"/></a></li>
-    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="40" width="40"/></a></li>
-    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="40" width="40"/></a></li>
-    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="40" width="40"/></a></li>
-    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="40" width="40"/></a></li>
+    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="50" width="40"/></a></li>
+    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="50" width="40"/></a></li>
+    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="50" width="40"/></a></li>
+    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="50" width="40"/></a></li>
   </ul>
 </body>
 </html>

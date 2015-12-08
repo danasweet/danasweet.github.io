@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>blog | dana sweet</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!--Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
@@ -19,12 +19,12 @@
 <body>
   <header><a href="http://danawritescode.com">dana sweet</a></header>
   <div>
-    <ul class="navbar">
-      <li><a href="http://danawritescode.com/projects">projects</a></li>
-      <li><a href="http://danawritescode.com/resume">résumé</a></li>
-      <li><a href="http://danawritescode.com/blog">blog</a></li>
-      <li><a href="http://danawritescode.com/about">about</a></li>
-      <li><a href="http://danawritescode.com/contact">say hello</a></li>
+    <ul id="navbar">
+      <li><a class="tab" href="http://danawritescode.com/projects">projects</a></li>
+      <li><a class="tab" href="http://danawritescode.com/resume">résumé</a></li>
+      <li><a class="tab" href="http://danawritescode.com/blog">blog</a></li>
+      <li><a class="tab" href="http://danawritescode.com/about">about</a></li>
+      <li><a class="tab" href="http://danawritescode.com/contact">contact</a></li>
     </ul>
   </div>
   <hr>
@@ -34,41 +34,40 @@
 
   <p id="date">july 10, 2015</p>
   <br>
-  <p class="body">
+  <p class="block-text">
     I'll be honest, last week i had never even heard of Git. And now here I am writing a post so that others might absorb some of my newfound knowledge. Yikes! At this rate, in 19 weeks i'm going to be well on my way to coding genius!
   </p>
-  <p class="body">
+  <p class="block-text">
     Ok, let's get to it. Contrary to popular novice belief, Git and GitHub are not the same thing.
   </p>
-  <p class="body">
+  <p class="block-text">
     <span class="bold">Big difference #1</span>: Git lives locally on your computer, while GitHub lives online. Git is a software that you download and use in the command line of your computer. You can access GitHub from anywhere with an Internet connection. The name really is quite fitting: GitHub is a remote Hub for what you've done with Git on your computer.
   </p>
-  <p class="body">
+  <p class="block-text">
     <span class="bold">Big difference #2</span>: Git is all you; GitHub is all about collaboration. You have your Git and I have mine--remember it's just a piece of software on your computer. But GitHub is like a huge remote warehouse that holds all your stuff (code). Others (like say, your teammates) can access your stored repositories, enabling you to work on projects together with ease.
   </p>
-  <p class="body">
+  <p class="block-text">
     <span class="bold">Big difference #3</span>: Git and GitHub have different functionality, but they work together. Git is a version control system (VCS). This means you can use Git to save multiple versions of your code as you go along. You save your work by adding and committing changes to your code, and each time you end up with a different version. Down the line, if your code gets messy, you can return to a previous version where all was well. It's like a do-over for your code! GitHub then keeps track of all those changes for you, and makes them available online for others to view and give feedback on.
   </p>
-  <p class="body">
+  <p class="block-text">
     Not too complicated, right?
   </p>
-  <p class="body">
+  <p class="block-text">
     Embarrassing fact time: when I found out I'd be using GitHub at DBC, I gave it a quick google and still didn't quite grasp it. Not to mention Git, which I had no clue was a separate entity altogether. Hopefully this blog simplified some concepts, but the best way to learn is to go play around with this stuff yourself! Go ahead--Git in there!
   </p>
-  <p class="body">
+  <p class="block-text">
     ♬ i don't know much....but i know i love <strike>you</strike> Git ♬
   </p>
   <br>
   <hr>
-  <ul class="social">
+  <ul class="footer">
     <li></li>
   </ul>
   <ul class="links">
-    <li><a href="https://www.facebook.com/dana.sweet" target="_blank"><img src="../imgs/facebookbutton.png" alt="facebook link" height="40" width="40"/></a></li>
-    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="40" width="40"/></a></li>
-    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="40" width="40"/></a></li>
-    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="40" width="40"/></a></li>
-    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="40" width="40"/></a></li>
+    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="50" width="40"/></a></li>
+    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="50" width="40"/></a></li>
+    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="50" width="40"/></a></li>
+    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="50" width="40"/></a></li>
   </ul>
 </body>
 </html>

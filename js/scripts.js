@@ -25,4 +25,11 @@ $( document ).ready(function() {
         $( "#msgSubmit" ).removeClass( "hidden" );
         $("#contactForm").trigger("reset");
     }
+
+    // $(".image-expand").fancybox();
+
+    $("#navbar a").click(function(){
+        $("#navbar a").removeClass("active");
+        $(this).addClass("active");
+    });
 });
