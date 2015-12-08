@@ -15,20 +15,22 @@
     <link href="../css/default.css" rel="stylesheet" type="text/css">
     <!--Favicon -->
     <link rel="icon" type="image/png" href="http://31.media.tumblr.com/tumblr_lkl5i79P901qfamg6.png">
+    <!-- JS -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/scripts.js"></script>
   </head>
   <body>
     <header><a href="http://danawritescode.com">dana sweet</a></header>
     <div>
-      <ul class="navbar">
-        <li><a href="http://danawritescode.com/projects">projects</a></li>
-        <li><a href="http://danawritescode.com/resume">résumé</a></li>
-        <li><a href="http://danawritescode.com/blog">blog</a></li>
-        <li><a href="http://danawritescode.com/about">about</a></li>
-        <li><a href="#">say hello</a></li>
+      <ul id="navbar">
+        <li><a class="tab" href="http://danawritescode.com/projects">projects</a></li>
+        <li><a class="tab" href="http://danawritescode.com/resume">résumé</a></li>
+        <li><a class="tab" href="http://danawritescode.com/blog">blog</a></li>
+        <li><a class="tab" href="http://danawritescode.com/about">about</a></li>
+        <li><a class="tab active" href="#">contact</a></li>
       </ul>
     </div>
     <hr>
-    <br>
     <div class="row">
         <h3 class="col-sm-6 col-sm-offset-3">Shoot me a message.</h3>
       <div class="col-sm-6 col-sm-offset-3">
@@ -42,24 +44,23 @@
             </div>
         </div>
         <div class="form-group">
-            <textarea id="message" class="form-control" rows="5" placeholder="Your message" required></textarea>
+            <textarea id="message" class="form-control" rows="8" placeholder="Your message" required></textarea>
         </div>
-          <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Send</button>
-          <div id="msgSubmit" class="h3 text-center hidden">Success! I'll get back to you soon.</div>
+          <button type="submit" id="form-submit" class="btn btn-lg pull-right ">Send</button>
+          <div id="msgSubmit" class="h3 text-center alert alert-success hidden">Success! I'll get back to you soon.</div>
         </form>
       </div>
     </div>
   <br>
   <hr>
-  <ul class="social">
+  <ul class="footer">
     <li></li>
   </ul>
   <ul class="links">
-    <li><a href="https://www.facebook.com/dana.sweet" target="_blank"><img src="../imgs/facebookbutton.png" alt="facebook link" height="40" width="40"/></a></li>
-    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="40" width="40"/></a></li>
-    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="40" width="40"/></a></li>
-    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="40" width="40"/></a></li>
-    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="40" width="40"/></a></li>
+    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="50" width="40"/></a></li>
+    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="50" width="40"/></a></li>
+    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="50" width="40"/></a></li>
+    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="50" width="40"/></a></li>
   </ul>
   </body>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>

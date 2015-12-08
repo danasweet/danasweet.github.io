@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>blog | dana sweet</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!--Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
@@ -19,12 +19,12 @@
 <body>
   <header><a href="http://danawritescode.com">dana sweet</a></header>
   <div>
-    <ul class="navbar">
-      <li><a href="http://danawritescode.com/projects">projects</a></li>
-      <li><a href="http://danawritescode.com/resume">résumé</a></li>
-      <li><a href="http://danawritescode.com/blog">blog</a></li>
-      <li><a href="http://danawritescode.com/about">about</a></li>
-      <li><a href="http://danawritescode.com/contact">say hello</a></li>
+    <ul id="navbar">
+      <li><a class="tab" href="http://danawritescode.com/projects">projects</a></li>
+      <li><a class="tab" href="http://danawritescode.com/resume">résumé</a></li>
+      <li><a class="tab" href="http://danawritescode.com/blog">blog</a></li>
+      <li><a class="tab" href="http://danawritescode.com/about">about</a></li>
+      <li><a class="tab" href="http://danawritescode.com/contact">contact</a></li>
     </ul>
   </div>
   <hr>
@@ -32,17 +32,17 @@
   <h3 class="blogsubtitle">who iterated better?</h3>
   <p id="date">august 23, 2015</p>
   <br>
-  <p class="body">
+  <p class="block-text">
     My first impressions of JavaScript are mixed. Ruby spoiled me with many shortcuts. She carries out many processes "under the hood," and doesn't need a lot of step-by-step instruction. JavaScript is a much more literal language. You must spell out exactly what you want from it.
   </p>
-  <p class="body">
+  <p class="block-text">
     This can be illustrated in the simple case of iterating over an array. Ruby has numerous methods for iteration, but the most basic and commonly used is each. <span class="code">each</span> calls a given block of code once for each element in the array. The code below will print the double of each number in the array (on separate lines, thanks to <span class="code">puts</span>).
   </p>
   <p class="codeblock">
     a = [1, 2, 3, 4, 5]<br>
     a.each {|i| puts i*2}
   </p>
-  <p class="body">
+  <p class="block-text">
     JavaScript doesn't have as many looping functions as Ruby has looping methods. This JavaScript <span class="code">for loop</span> has the same result as Ruby's <span class="code">each</span> method above:
   </p>
   <p class="codeblock">
@@ -51,31 +51,30 @@
       console.log(a[i]*2);<br>
     }
   </p>
-  <p class="body">
+  <p class="block-text">
     Comparing the two, Ruby looks more like English, while JavaScript looks like what flashes by the screen when a hacker is mad-coding in the movies. Using a for loop to iterate means defining 3 things between the parentheses:<br>
     1. Defining a counting variable and giving it a value<br>
     2. Similar to a <span class="code">while</span> statement, this section defines the condition of the loop. In this case, looping will continue while our counting variable is less than the number of values in the array.<br>
     3. Incrementing our counting variable. This is done after each loop has been executed.<br>
     After the parentheses, whatever is between the curly brackets is the code block that will be executed upon each loop, same as in Ruby.
   </p>
-  <p class="body">
+  <p class="block-text">
     Ruby didn't need a counting variable or to be told how many loops to make. Basically everything that's between the parentheses in JavaScript's <span class="code">for loop</span> is what Ruby is doing for you implicitly in the <span class="code">each</span> method.
   </p>
   <h4>tl;dr</h4>
-  <p class="body">
+  <p class="block-text">
     Ruby makes iterating easy with a lot of built-in methods that automate processes for you, while JavaScript likes to explicitly be told what to do. For me, this means Ruby is more convenient, but JavaScript makes sure I fully understand what each and every piece of my code is doing. <span class="italic">Ding, ding!</span> I'm declaring this round a tie!
   </p>
   <br>
   <hr>
-  <ul class="social">
+  <ul class="footer">
     <li></li>
   </ul>
   <ul class="links">
-    <li><a href="https://www.facebook.com/dana.sweet" target="_blank"><img src="../imgs/facebookbutton.png" alt="facebook link" height="40" width="40"/></a></li>
-    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="40" width="40"/></a></li>
-    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="40" width="40"/></a></li>
-    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="40" width="40"/></a></li>
-    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="40" width="40"/></a></li>
+    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="50" width="40"/></a></li>
+    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="50" width="40"/></a></li>
+    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="50" width="40"/></a></li>
+    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="50" width="40"/></a></li>
   </ul>
 </body>
 </html>

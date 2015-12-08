@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>blog | dana sweet</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!--Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
@@ -19,12 +19,12 @@
 <body>
   <header><a href="http://danawritescode.com">dana sweet</a></header>
   <div>
-    <ul class="navbar">
-      <li><a href="http://danawritescode.com/projects">projects</a></li>
-      <li><a href="http://danawritescode.com/resume">résumé</a></li>
-      <li><a href="http://danawritescode.com/blog">blog</a></li>
-      <li><a href="http://danawritescode.com/about">about</a></li>
-      <li><a href="http://danawritescode.com/contact">say hello</a></li>
+    <ul id="navbar">
+      <li><a class="tab" href="http://danawritescode.com/projects">projects</a></li>
+      <li><a class="tab" href="http://danawritescode.com/resume">résumé</a></li>
+      <li><a class="tab" href="http://danawritescode.com/blog">blog</a></li>
+      <li><a class="tab" href="http://danawritescode.com/about">about</a></li>
+      <li><a class="tab" href="http://danawritescode.com/contact">contact</a></li>
     </ul>
   </div>
   <hr>
@@ -33,51 +33,50 @@
   <h3 class="blogsubtitle">what's the deal with Ruby?</h3>
   <p id="date">july 24, 2015</p>
   <br>
-  <p class="body">
+  <p class="block-text">
     Ruby reminds me of a girl who's playing hard to get: mysterious, sensible, particular (she wants what she wants and won't settle for less!). You've got to put in the effort if you want to win her over, but boy when you do, having her on your arm (or in the case of this terrible analogy, on your resume) makes it all worth it. This week I began to get to know Ruby, starting with a few of her classes for storing data: arrays and hashes.
   </p>
   <h4>Arrays</h4>
-  <p class="body">
+  <p class="block-text">
     An <span class="bold">array</span> is essentially a list. It can hold all kinds of objects--strings, integers, floating numbers, even other arrays (<a class="easteregg" href="https://www.youtube.com/watch?v=5KtNt9DUtBA">arrayception</a>!)
   </p>
-  <p class="body">
+  <p class="block-text">
     Let's pretend, hypothetically, that I'm a cat lady. No truth to this whatsoever, just an example. I have so many cats, I need a list to keep track of all their names. An array would be perfect for this task.
   </p>
   <img src="../imgs/cat_array.png" alt="Cat Array">
-  <p class="body">
+  <p class="block-text">
     The contents of an array are ordered and indexed by number. The first object is 0, the second is 1, the third 2, all the way down the list. You can access an object by specifying its position in the array, like this:
   </p>
   <img src="../imgs/access_array.png" alt="Access Array">
   <h4>Hashes</h4>
-  <p class="body">
+  <p class="block-text">
     A <span class="bold">hash</span> is similar to an array, but it stores data in pairs. One half of the pair is the <span class="bold">key</span>, the other half, the <span class="bold">value</span>. Some find it helpful to think of a hash like a dictionary: the key is the word you're looking up, and the value is its definition.
   </p>
-  <p class="body">
+  <p class="block-text">
     Let's pretend (again, hypothetically) that I have so many cats, I can't even remember who is who. I need a cheat sheet that gives me a description of the cat when I enter its name. This is where a hash comes in handy.
   </p>
   <img src="../imgs/cat_hash.png" alt="Cat Hash">
-  <p class="body">
+  <p class="block-text">
     In this case, the hash key (on the left) is the cat's name, and the value (on the right) is the cat's description. If I were to call cat_traits["danny devito"], Ruby would return "short legs big belly".
   </p>
-  <p class="body">
+  <p class="block-text">
     If you think about it, an array is basically a hash, but with a fixed key--the integer defining object placement is the key. And a hash is basically an array whose key can be anything, not just a number. <span class="italic">The key is key to your understanding!</span>
   </p>
   <h4>tl; dr</h4>
-  <p class="body">
+  <p class="block-text">
     Arrays and hashes are both collections of information. Arrays are like lists, and hashes allow for more details by storing objects in pairs. Also, I totally lied. I <span class="italic">am</span> a cat lady. Just the one, though. No need for an array or hash to keep them straight. <span class="italic">Yet.</span>
   </p>
   <img src="../imgs/jsweet.png" alt="j sweet kitty cat">
   <br>
   <hr>
-  <ul class="social">
+  <ul class="footer">
     <li></li>
   </ul>
   <ul class="links">
-    <li><a href="https://www.facebook.com/dana.sweet" target="_blank"><img src="../imgs/facebookbutton.png" alt="facebook link" height="40" width="40"/></a></li>
-    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="40" width="40"/></a></li>
-    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="40" width="40"/></a></li>
-    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="40" width="40"/></a></li>
-    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="40" width="40"/></a></li>
+    <li><a href="https://github.com/danasweet" target="_blank"><img src="../imgs/githubbutton.png" alt="github link" height="50" width="40"/></a></li>
+    <li><a href="https://www.linkedin.com/in/sweetdana" target="_blank"><img src="../imgs/linkedinbutton.png" alt="linkedin link" height="50" width="40"/></a></li>
+    <li><a href="https://twitter.com/dana_sweet" target="_blank"><img src="../imgs/twitterbutton.png" alt="twitter link" height="50" width="40"/></a></li>
+    <li><a href="https://instagram.com/danasweet/" target="_blank"><img src="../imgs/instabutton.png" alt="instagram link" height="50" width="40"/></a></li>
   </ul>
 </body>
 </html>

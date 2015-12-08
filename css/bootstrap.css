@@ -3063,6 +3063,7 @@ fieldset[disabled] a.btn {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
+  text-decoration: none;
 }
 .btn-default:focus,
 .btn-default.focus {
@@ -4092,6 +4093,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-pills > li > a {
   border-radius: 4px;
+  color: white;
 }
 .nav-pills > li + li {
   margin-left: 2px;
